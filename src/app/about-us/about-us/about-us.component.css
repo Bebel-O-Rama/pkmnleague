@@ -1,0 +1,47 @@
+#aPropos {
+    height: 350px;
+    width: 465px;
+    background-color: aliceblue;
+    text-align: center;
+    font-size: smaller;
+}
+
+#title {
+    margin-left: 320px;
+    margin-top: 10px;
+  }
+
+#contact {
+    margin-top: 25px;
+    width: 465px;
+    height: 150px;
+    flex-direction: row;
+}
+
+#mainCard {
+    top: 50px;
+    left: 99px;
+    width:500px;
+    height: 600px;
+    /* display: flex;     */
+    background: rgba(255, 105, 97,0.7);
+}
+
+#p {
+    margin-left: 15px;
+}
+
+.mainContent {
+    margin-top: 200;
+    margin-right: 600;
+}
+
+button {
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-left: 15px;
+}

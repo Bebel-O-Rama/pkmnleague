@@ -1,0 +1,57 @@
+
+#boutonContainer{
+    margin-left: 100px;
+    float: inline-start;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.badge {
+    float: left; 
+    height:16px;
+    width: 15px;
+}
+
+#title {
+    margin-left: 320px;
+    margin-top: 10px;
+}
+
+.mainCard{
+    margin-top: 70px;
+    margin-left: 100px;
+    border: none;
+    height:200px;
+    width: 600px;
+    
+}
+
+.pokedexclass{
+    margin-left: 100px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.icon{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center; 
+}
+
+.teamMember {
+    display: inline-block;
+    margin: 20px;
+    stroke: black 1mm;
+}
+
+.my-header h2 { 
+    display: inline;
+    margin-left: 260px;
+
+  }
+  .my-header span { 
+    float: left;
+  }

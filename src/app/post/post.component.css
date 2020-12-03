@@ -1,0 +1,39 @@
+#mainContent{
+  padding-top:70px;
+  padding-left: 550px;
+  padding-right: 550px;
+}
+
+#title {
+  margin-left: 320px;
+  margin-top: 10px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+
+  }
+  
+  #annuler {
+    margin-right: 270px;
+    border-radius: 25px;
+
+  }
+
+  #envoyer {
+    border-radius: 25px;
+  }
+
+  #check {
+    margin-top: 15px;
+  }
+
+  #date {
+    width: 230px;
+  }

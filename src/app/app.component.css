@@ -1,0 +1,97 @@
+
+#drawer {
+  width: 400px;
+}
+
+#menu {
+  margin-left: 7px;
+}
+
+
+#toolbar {
+  display: flex;
+  justify-content: center;
+
+}
+
+.img-responsive {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px
+}
+
+.mat-toolbar.mat-primary {
+  background: #3681d1;
+  color: rgb(253, 75, 75);
+}
+
+.appTitle {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 580px;
+}
+
+.connectBouton {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+
+.contentContainer {
+  justify-content: center;
+  align-items: center;
+}
+
+.example-container {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+  }
+  
+  /* .example-sidenav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  .titleBar{
+    color:basic;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .listItem {
+    border-bottom: 1px solid black;
+  }
+
+  .invisible {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .invisible2 {
+    visibility: hidden;
+    background: transparent;
+    border: none !important;
+  }
+
+
+
+  .menuItem{
+    text-emphasis: none;
+    text-emphasis-color: initial;
+  }
+
+  .routerOutler{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
