@@ -6,3 +6,7 @@ mat-dialog-actions {
 #mainContent {
     width: 300px;
 }
+
+#primary {
+    border-radius: 25px;
+}

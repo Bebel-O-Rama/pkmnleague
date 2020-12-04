@@ -3,14 +3,14 @@
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <mat-list role="list">
       <mat-list-item role="listitem">
-        <h2 id="menu">Menu</h2>
+        <h1 id="menu">Menu</h1>
       </mat-list-item>
       
       <mat-list-item role="listitem" class="listItem"><button class="invisible" routerLink="/" routerLinkActive="active"
         (click)="drawer.toggle()">Accueil</button></mat-list-item>
 
         <mat-list-item role="listitem" class="listItem"><button class="invisible" routerLink="/post" routerLinkActive="active"
-          (click)="drawer.toggle()">fadsgjhfdsakjhsfadgjhkfdsa</button></mat-list-item>
+          (click)="drawer.toggle()">Publier</button></mat-list-item>
 
       <div *ngIf="estCo(); then thenBlockMenu else elseBlockMenu"></div>
       <ng-template #elseBlockMenu>

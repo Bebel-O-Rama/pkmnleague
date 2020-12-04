@@ -1,3 +1,8 @@
+#profil {
+  float: right;
+  margin-right: 5px;
+}
+
 .scrollZone {
   height: 70vh;
   padding-top: 10px;
