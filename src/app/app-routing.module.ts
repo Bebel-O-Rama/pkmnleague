@@ -8,6 +8,7 @@ import { ProfilComponent } from './profil/profil/profil.component';
 import { SignInComponent } from './sign-in/sign-in.component/sign-in.component';
 import { PostComponent } from './post/post.component';
 import { InfoBoxComponent } from './accueil/info-box/info-box.component';
+import { TeamComponent } from './team/team/team.component';
 
 const routes: Routes = [
     { path: 'about-us', component: AboutUsComponent },
@@ -15,10 +16,11 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'pokedex', component: PokedexComponent },
     { path: 'profile', component: ProfilComponent },
+    { path: 'profile/equipe', component: TeamComponent },
     { path: 'sign-in', component: SignInComponent },
     { path: 'post', component: PostComponent },
     { path: 'accueil', component: InfoBoxComponent },
-    {path:'',redirectTo:'accueil', pathMatch: 'full' },
+    { path: '', redirectTo:'accueil', pathMatch: 'full' }
 ];
 
 @NgModule({

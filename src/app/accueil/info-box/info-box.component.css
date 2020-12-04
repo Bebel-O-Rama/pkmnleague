@@ -1,6 +1,6 @@
 .mainContent {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     /* align-items: center; */
     padding: 15px;
 }
@@ -10,9 +10,14 @@
 }
 
 #title {
-        margin-left: 250px;
-        margin-top: 15px;
-}
+    margin-left: 292px;
+    margin-top: 0px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 4ch;
+  }
+
 
 .aboutUs {
     width: 400px;
@@ -47,10 +52,12 @@ button {
     /* margin-left: 11%; */
     margin-left: 200;
     margin-top: 20px;
-
+    align-self: start;
 }
 .general {
     display: flex;
+    align-content: flex-start;
+    margin-left: 10%;
     /* justify-content: center; */
 }
 

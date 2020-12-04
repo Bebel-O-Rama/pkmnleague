@@ -1,12 +1,16 @@
 #mainContent{
   padding-top:70px;
-  padding-left: 550px;
-  padding-right: 550px;
+  padding-left: 25vw;
+  padding-right: 25vw;
 }
 
 #title {
-  margin-left: 320px;
-  margin-top: 10px;
+  margin-left: 260px;
+  margin-top: 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 4ch;
+  letter-spacing: 3px;
 }
 
 .example-form {
@@ -17,17 +21,25 @@
   
   .example-full-width {
     width: 100%;
+    padding: 10px;
 
   }
   
   #annuler {
-    margin-right: 270px;
     border-radius: 25px;
-
+    margin-right: 5%;
+    margin-left: 100%;
+    padding-right: 3ch;
+    padding-left: 3ch;
   }
-
+  
   #envoyer {
     border-radius: 25px;
+    margin-bottom: 20px;
+    margin-right: 20vw;
+    margin-left: 30%;
+    padding-right: 3ch;
+    padding-left: 3ch;
   }
 
   #check {

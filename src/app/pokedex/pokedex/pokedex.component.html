@@ -1,19 +1,15 @@
-<h2 id="title">Pokédex</h2>
+<h2 id="title">Pokédex</h2> <br>
 
-<br>
-
-<div class="pokedex">
-    <div class="wrapper">
-        <li *ngFor="let pokemon of pokemons; let index = index;">
-            <div class="box" data-id="{{index}}" (click)="ajouterEquipe(data-id)">
-                <span style="color: #888;">no. {{ index+1 }}</span>
-                <br>
-                <span style="text-shadow: 2px 2px #111;"> {{ pokemon.name }} </span>
-                <br>
+<div class="scrollZone">
+    <div class="pokedex">
+        <div class="wrapper">
+            <div *ngFor="let pokemon of pokemons; let index = index;" class="box" data-id="{{index}}" (click)="ajouterEquipe(data-id)">
+                <span style="color: #999;">n° {{ index+1 }}</span> <br>
+                <span style="text-shadow: 2px 2px #111;"> {{ pokemon.name }} </span> <br>
                 <div class="pkmnFrame">
-                    <img src="./../../../assets/imgPkmns/{{index+1}}.png" alt="{{pokemon.name}}">
+                    <img src="./../../../assets/images/imgPkmns/{{index+1}}.png" alt="{{pokemon.name}}">
                 </div>
             </div>
-        </li>
+        </div>
     </div>
 </div>

@@ -7,6 +7,15 @@
   margin-left: 7px;
 }
 
+#title {
+  margin-left: 300px;
+  margin-top: 0px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 4ch;
+}
+
 
 #toolbar {
   display: flex;
@@ -29,18 +38,30 @@
   display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 580px;
+    margin-left: 40vw;
 }
 
 .connectBouton {
   margin-left: 5px;
   margin-right: 5px;
   border-radius: 20px;
+  max-height: 40px;
+  font-size: 1ch;
 }
 
 .contentContainer {
   justify-content: center;
   align-items: center;
+}
+
+#fillerBlock{
+  width: auto;
+  background-image: "assets/images/MainFrameTop.PNG";
+  background-repeat: repeat;
+}
+
+::marker() {
+  visibility: hidden;
 }
 
 .example-container {
@@ -82,8 +103,9 @@
     background: transparent;
     border: none !important;
   }
-
-
+  .invisible2:first-child {
+    visibility:visible;
+  }
 
   .menuItem{
     text-emphasis: none;
@@ -91,7 +113,7 @@
   }
 
   .routerOutler{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
   }

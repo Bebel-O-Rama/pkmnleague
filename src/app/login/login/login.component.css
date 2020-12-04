@@ -1,4 +1,4 @@
-    #connexion {
+#connexion {
     margin-left: 300px;
     float: right;
     margin-top: 15px;
@@ -6,13 +6,16 @@
 }
 
 #inputContainer {
-    margin-top: 3 0px;
+    margin-top: 30px;
 
 }
-
 #title {
-    margin-left: 240px;
-    margin-top: 10px;
+    margin-left: 292px;
+    margin-top: 0px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 4ch;
   }
 
 #annuler {

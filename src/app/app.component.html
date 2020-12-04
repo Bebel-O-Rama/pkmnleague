@@ -1,3 +1,4 @@
+<!-- <div onload="User.Update(cookieService.get('Username'), cookieService.check('Username'), cookieService.check('IsFighter'))"></div> -->
 <mat-drawer-container style="background-color: transparent ;" class="example-container">
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <mat-list role="list">
@@ -20,6 +21,10 @@
           (click)="drawer.toggle()">Profil</button></mat-list-item>
         <mat-list-item role="listitem" class="listItem"><button class="invisible" routerLink="/pokedex"
           routerLinkActive="active" (click)="drawer.toggle()">Pokédex</button></mat-list-item>
+          <div *ngIf="estCombattant()">
+            <mat-list-item role="listitem" class="listItem"><button class="invisible" routerLink="/profile/equipe"
+              routerLinkActive="active" (click)="drawer.toggle()">Équipe</button></mat-list-item>
+          </div>
       </ng-template>
 
       <mat-list-item role="listitem" class="listItem"><button class="invisible" routerLink="/events"
@@ -40,10 +45,10 @@
       <span class="appTitle">
 
 
-        <button classe= "invisible2" routerLink="/" routerLinkActive="active">
+        <button class="invisible2" routerLink="/" routerLinkActive="active">
           <h3>
-            <img width="16" class="img-responsive" src="assets/pokeball.svg">
-            Montreal Pkmn League <img width="16" class="img-responsive" src="assets/pokeball.svg">
+            <img width="16" class="img-responsive" src="assets/images/pokeball.svg">
+            Montreal Pkmn League <img width="16" class="img-responsive" src="assets/images/pokeball.svg">
           </h3>
         </button>
 
@@ -62,26 +67,27 @@
       </ng-template>
 
       <ng-template #thenBlock>
-        <button mat-flat-button color="basic" class="connectBouton" (click)="changeCo(); gotoLink('/')">
+        <button mat-flat-button color="basic" class="connectBouton" (click)="changeCo(); gotoLink('/')" routerLinkActive="active">
           Déconnexion
         </button>
       </ng-template>
     </mat-toolbar>
   </div>
 
+<mat-card class="innerthing">
+  <div>
+    <section style="background-image: url('assets/images/MainFrameTop.PNG'); overflow: visible; background-repeat: repeat-x;" class="contentContainer">
+      <section style="background-image: url('assets/images/MainFrame2.PNG'); overflow: hidden; background-repeat: no-repeat;" class="contentContainer">
 
-  
-  <mat-card class="innerthing">
-    <section style="background-image: url('assets/MainFrame2.PNG');" class="contentContainer">
 
-
-      <router-outlet class="routerOutler">
+      <router-outlet class="routerOutler" style="background-image: url('assets/images/MainFrameTop.PNG'); overflow: visible; background-repeat: repeat;">
   
   
       </router-outlet>
+      </section>
     </section>
-  </mat-card>
-
+  </div>
+</mat-card>
 
 
 

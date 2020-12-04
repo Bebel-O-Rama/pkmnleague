@@ -7,8 +7,12 @@
 }
 
 #title {
-    margin-left: 320px;
-    margin-top: 10px;
+    margin-left: 279px;
+    margin-top: 0px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 4ch;
   }
 
 #contact {

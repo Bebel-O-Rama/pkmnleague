@@ -1,4 +1,4 @@
-<h2 id="title">Création de compte</h2>
+<h2 id="title">Sign-up</h2>
 
 <section class="login">
 	<form class="login-form">
@@ -8,9 +8,11 @@
 			<mat-form-field appearance="fill">
 				<mat-label>Choisir un type d'utilisateur</mat-label>
 				<select matNativeControl required>
-					<option value="joueur">Joueur</option>
-					<option value="champion">Champion</option>
-					<option value="admin">Administrateur</option>
+					<option value="spectateur" (click)="selectOpt('spectateur')">Spectateur</option>
+					<option value="joueur" (click)="selectOpt('joueur')">Joueur</option>
+					<option value="champion" (click)="selectOpt('champion')">Champion</option>
+					<option value="admin" (click)="selectOpt('admin')">Administrateur</option>
+					
 				</select>
 			</mat-form-field>
 		</div>

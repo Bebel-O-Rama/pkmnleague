@@ -32,7 +32,10 @@ export class ProfilComponent implements OnInit {
   public getName(){
     this.username = User.getInstance().getNom();//AppComponent.getName();
     return this.username;
-    
+  }
+
+  estCombattant():boolean {
+    return User.getInstance().estCombattant();
   }
 
   public gotoLink(link:string){

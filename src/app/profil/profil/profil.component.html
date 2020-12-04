@@ -4,7 +4,7 @@
 <mat-card class = "mainCard" style="background-color: transparent;">
 
     <div style="clear: left;">
-        <p style="float: left;"><img src="/assets/pokemonstar.svg" height="200" width="200"></p>
+        <p style="float: left;"><img src="/assets/images/pokemonstar.svg" height="200" width="200"></p>
         <div>
             <h1>Nom: </h1>
             <h2>{{username}}</h2>
@@ -15,14 +15,16 @@
     </div>
 
 </mat-card>
-<mat-card class = "pokedexclass">
-    <div>
-        <li *ngFor="let pkmnNb of team; let i = index;" class="teamMember">
-            {{ i+1 }}. <img src="./../../../assets/imgPkmns/{{pkmnNb+1}}.png">
-            WORK IN PROGRESS...
-        </li>
-    </div>
-</mat-card>
+
+<div *ngIf="estCombattant()">
+    <mat-card class = "pokedexclass">
+        <div>
+            <li *ngFor="let pkmnNb of team; let i = index;" class="teamMember">
+                {{ i+1 }}. <img src="./../../../assets/images/imgPkmns/{{pkmnNb+1}}.png">
+            </li>
+        </div>
+    </mat-card>
+</div>
 
 <mat-card id="boutonContainer">
     <mat-list-item><button mat-flat-button color="accent" class="icon" (click)="gotoLink('/pokedex');">Pokédex</button></mat-list-item>

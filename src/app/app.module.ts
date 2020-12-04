@@ -25,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { EventDialogModule } from './event-dialog/event-dialog.module';
 import { EventDialogComponent } from './event-dialog/event-dialog/event-dialog.component';
+import { TeamModule } from './team/team.module';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { EventDialogComponent } from './event-dialog/event-dialog/event-dialog.c
     PokedexModule,
     InfoBoxModule,
     SignInModule,
+    TeamModule,
     HttpClientModule, AngularSvgIconModule.forRoot(),
   ],
   providers: [],

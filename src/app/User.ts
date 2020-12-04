@@ -3,7 +3,12 @@
 
 export class User {
   
-    private static instance : User;
+    private static instance : User; 
+
+    static ERROR_NAME = "ERROR_NAME_NOT_FOUND";
+    nom = User.ERROR_NAME;
+    estConn = false;
+    estCombat = false;
 
     public static instanciate() : void {
         User.instance =  User.getDefaultUser();
@@ -15,25 +20,25 @@ export class User {
 
         return User.instance;
     }
- 
-    static ERROR_NAME = "ERROR_NAME_NOT_FOUND";
-    nom = User.ERROR_NAME;
-    estConn = false;
+
   
-    constructor(name:string, connState:boolean) {
+    constructor(name:string, connState:boolean,isFighter:boolean) {
       this.estConn = connState;
+      this.estCombat = isFighter;
       this.nom = name;
     }
   
     public static getDefaultUser():User {
       let estConn = false;
       let nom = User.ERROR_NAME;
-      return new User(nom, estConn)
+      return new User(nom, estConn, false)
     }
 
-    public static getNewUser(name:string, connState:boolean):User { return new User(name, connState); }
+    public static getNewUser(name:string, connState:boolean, isFighter:boolean):User { return new User(name, connState, isFighter); }
   
     public estCo():boolean { return this.estConn; }
+
+    public estCombattant():boolean { return this.estCombat; }
   
     public updateNom(nouvNom:string):void { this.nom = nouvNom; }
   
@@ -41,9 +46,13 @@ export class User {
   
     public changeCo():void { this.estConn = !(this.estConn); }
 
-    public static Update(nom:string, estConn:boolean) {
+    public changeComb():void { this.estCombat = !(this.estCombat); }
+
+    public static Update(nom:string, estConn:boolean, estComb:boolean) {
         if (estConn != User.getInstance().estCo())
           User.getInstance().changeCo();
+        if (estComb != User.getInstance().estCombattant())
+          User.getInstance().changeComb();
         User.getInstance().updateNom(nom);
       }
   }
